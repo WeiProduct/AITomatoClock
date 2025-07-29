@@ -1,0 +1,31 @@
+# GitHub Pages configuration for AI Tomato Clock
+title: AI番茄钟 - 智能专注时间管理工具
+description: 利用人工智能优化你的专注时间，提升工作效率，科学管理注意力
+url: "https://weiproduct.github.io"
+baseurl: "/AITomatoClock"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Include files
+include:
+  - _pages
+
+# SEO settings
+lang: zh-CN
+author: WeiProduct
+social:
+  github: WeiProduct
+
+# Google Analytics (if needed)
+# google_analytics: UA-XXXXXXXXX-X
