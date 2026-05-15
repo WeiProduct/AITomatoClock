@@ -90,8 +90,8 @@ baseurl: "/your-repo-name"
 - **HTML5**: 语义化标记
 - **CSS3**: 现代CSS特性，Grid和Flexbox布局
 - **JavaScript**: 原生JS，无依赖
-- **Font Awesome**: 图标库
-- **Google Fonts**: 字体服务
+- **Structured metadata**: Canonical、Open Graph、Twitter Card 与 SoftwareApplication JSON-LD
+- **Zero CDN dependency**: 页面不依赖外部字体或图标库，适合 GitHub Pages 稳定托管
 
 ## 📄 许可证
 

@@ -3,215 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI番茄钟 - 智能专注时间管理工具</title>
+    <title>AI番茄闹钟 | AI Pomodoro Timer by WeiProduct</title>
+    <meta name="description" content="AI番茄闹钟把智能任务排序、时间分配、专注计时和进度追踪放进一个轻量 iPhone 与 iPad 应用，帮助学生、专业人士和自由职业者稳定进入深度工作。">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#f05252">
+    <link rel="canonical" href="https://weiproduct.github.io/AITomatoClock/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AI番茄闹钟 | AI Pomodoro Timer">
+    <meta property="og:description" content="AI task sorting meets Pomodoro rhythm. Focus smarter with adaptive reminders, progress tracking, and a clean timer interface.">
+    <meta property="og:url" content="https://weiproduct.github.io/AITomatoClock/">
+    <meta property="og:image" content="https://weiproduct.github.io/AITomatoClock/images/screenshot-1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI番茄闹钟 | AI Pomodoro Timer">
+    <meta name="twitter:description" content="Smart focus sessions for people who want less planning overhead and more steady progress.">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "AI番茄闹钟",
+      "alternateName": "AI Pomodoro Timer",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "iOS, iPadOS",
+      "url": "https://weiproduct.github.io/AITomatoClock/",
+      "downloadUrl": "https://apps.apple.com/cn/app/ai%E7%95%AA%E8%8C%84%E9%97%B9%E9%92%9F/id6748548518",
+      "creator": {
+        "@type": "Organization",
+        "name": "WeiProduct",
+        "url": "https://weiproduct.com/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <i class="fas fa-brain"></i>
-                <span>AI番茄钟</span>
-            </div>
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="nav-brand" href="#top" aria-label="AI番茄闹钟 home">
+                <span class="brand-mark" aria-hidden="true">25</span>
+                <span>AI番茄闹钟</span>
+            </a>
             <div class="nav-links">
-                <a href="#features">功能特点</a>
-                <a href="#how-it-works">工作原理</a>
-                <a href="#download">立即体验</a>
+                <a href="#features">功能</a>
+                <a href="#screenshots">界面</a>
+                <a href="#download">下载</a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
             <div class="hero-content">
-                <h1 class="hero-title">AI驱动的番茄工作法</h1>
-                <p class="hero-subtitle">利用人工智能优化你的专注时间，提升工作效率，科学管理注意力</p>
+                <p class="eyebrow">AI Pomodoro Timer for iPhone and iPad</p>
+                <h1 id="hero-title" class="hero-title">让 AI 帮你安排下一段专注时间</h1>
+                <p class="hero-subtitle">AI番茄闹钟结合任务优先级、智能时间分配、个性化建议和番茄工作法，把计划负担降下来，让专注节奏更容易坚持。</p>
                 <div class="hero-buttons">
-                    <a href="#download" class="btn btn-primary">
-                        <i class="fas fa-download"></i>
-                        立即下载
+                    <a href="https://apps.apple.com/cn/app/ai%E7%95%AA%E8%8C%84%E9%97%B9%E9%92%9F/id6748548518" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <span class="btn-icon" aria-hidden="true">A</span>
+                        App Store 下载
                     </a>
-                    <a href="#demo" class="btn btn-secondary">
-                        <i class="fas fa-play"></i>
-                        观看演示
-                    </a>
+                    <a href="#screenshots" class="btn btn-secondary">查看产品界面</a>
                 </div>
-            </div>
-            <div class="hero-image">
-                <div class="tomato-clock">
-                    <div class="clock-face">
-                        <div class="clock-hand"></div>
-                        <div class="ai-pulse"></div>
+                <dl class="hero-facts" aria-label="Product facts">
+                    <div>
+                        <dt>平台</dt>
+                        <dd>iPhone / iPad</dd>
                     </div>
+                    <div>
+                        <dt>类别</dt>
+                        <dd>效率工具</dd>
+                    </div>
+                    <div>
+                        <dt>价格</dt>
+                        <dd>免费</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="hero-visual" aria-label="AI番茄闹钟 app preview">
+                <div class="phone-frame primary-screen">
+                    <img src="images/screenshot-1.png" alt="AI番茄闹钟任务列表界面" width="1290" height="2796" fetchpriority="high" decoding="async">
+                </div>
+                <div class="timer-orbit" aria-hidden="true">
+                    <span>25</span>
+                    <small>AI</small>
                 </div>
             </div>
         </section>
 
         <section id="features" class="features">
             <div class="container">
-                <h2 class="section-title">核心功能</h2>
+                <div class="section-heading">
+                    <p class="eyebrow">Built around real focus behavior</p>
+                    <h2>从“要做什么”到“现在开始”</h2>
+                    <p>页面不再堆砌夸张数字，而是把产品本身的优势讲清楚：更低的任务整理成本、更稳定的专注节奏、更可见的进步反馈。</p>
+                </div>
                 <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3>AI智能调节</h3>
-                        <p>根据你的工作习惯和专注模式，AI自动调整番茄钟时长和休息间隔</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3>数据分析</h3>
-                        <p>详细的专注时间统计和效率分析，帮你了解最佳工作时段</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-bell"></i>
-                        </div>
-                        <h3>智能提醒</h3>
-                        <p>AI学习你的工作节奏，在最佳时机发送个性化的休息和工作提醒</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <h3>个性化界面</h3>
-                        <p>多种主题和声音选择，打造专属于你的专注环境</p>
-                    </div>
+                    <article class="feature-card">
+                        <span class="feature-icon" aria-hidden="true">01</span>
+                        <h3>智能任务排序</h3>
+                        <p>根据紧急度和重要度帮助用户决定下一项任务，减少开始前的犹豫和反复切换。</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-icon" aria-hidden="true">02</span>
+                        <h3>时间块分配</h3>
+                        <p>按任务难度和用户习惯安排更合适的专注时长，让 25 分钟节奏不再只是固定模板。</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-icon" aria-hidden="true">03</span>
+                        <h3>自适应提醒</h3>
+                        <p>动态调整休息和工作提醒，帮助用户避开疲劳堆积，同时维持持续推进的节奏。</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-icon" aria-hidden="true">04</span>
+                        <h3>进度与成就</h3>
+                        <p>通过历史记录、趋势和连续专注反馈，让用户看到真实积累，而不是只完成一次倒计时。</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="how-it-works" class="how-it-works">
-            <div class="container">
-                <h2 class="section-title">工作原理</h2>
-                <div class="steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h3>AI学习阶段</h3>
-                            <p>使用初期，AI观察并记录你的工作模式、专注时长和效率变化</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h3>智能优化</h3>
-                            <p>基于收集的数据，AI算法计算出最适合你的工作和休息时间配比</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h3>持续改进</h3>
-                            <p>随着使用时间增长，AI不断学习和调整，让你的效率持续提升</p>
-                        </div>
-                    </div>
+        <section class="workflow" aria-labelledby="workflow-title">
+            <div class="container workflow-grid">
+                <div>
+                    <p class="eyebrow">Product logic</p>
+                    <h2 id="workflow-title">一个轻量但完整的专注闭环</h2>
                 </div>
-            </div>
-        </section>
-
-        <section id="stats" class="stats">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-number">85%</div>
-                        <div class="stat-label">效率提升</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">10,000+</div>
-                        <div class="stat-label">活跃用户</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">4.8★</div>
-                        <div class="stat-label">用户评分</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">AI优化算法</div>
-                    </div>
-                </div>
+                <ol class="steps">
+                    <li>
+                        <span>Plan</span>
+                        <p>把待办拆成可执行任务，并让 AI 辅助排序。</p>
+                    </li>
+                    <li>
+                        <span>Focus</span>
+                        <p>进入计时器，保持简洁界面，降低干扰。</p>
+                    </li>
+                    <li>
+                        <span>Recover</span>
+                        <p>按节奏休息，避免长时间高压造成的效率下降。</p>
+                    </li>
+                    <li>
+                        <span>Improve</span>
+                        <p>用历史数据和趋势回看自己的工作模式。</p>
+                    </li>
+                </ol>
             </div>
         </section>
 
         <section id="screenshots" class="screenshots">
             <div class="container">
-                <h2>应用界面预览</h2>
-                <p>直观简洁的界面设计，让专注更简单</p>
+                <div class="section-heading">
+                    <p class="eyebrow">Current app surface</p>
+                    <h2>产品界面预览</h2>
+                    <p>清晰的任务、计时、数据和建议界面，让用户能快速理解这个 App 解决的具体问题。</p>
+                </div>
                 <div class="screenshots-grid">
-                    <div class="screenshot-item">
-                        <img src="images/screenshot-1.png" alt="主界面" class="screenshot-img">
-                        <p>智能任务管理</p>
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="images/screenshot-2.png" alt="番茄钟界面" class="screenshot-img">
-                        <p>专注计时器</p>
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="images/screenshot-3.png" alt="统计分析" class="screenshot-img">
-                        <p>数据统计分析</p>
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="images/screenshot-4.png" alt="AI建议" class="screenshot-img">
-                        <p>AI智能建议</p>
-                    </div>
+                    <figure class="screenshot-item">
+                        <img src="images/screenshot-1.png" alt="AI番茄闹钟任务管理界面" width="1290" height="2796" loading="lazy" decoding="async">
+                        <figcaption>智能任务管理</figcaption>
+                    </figure>
+                    <figure class="screenshot-item">
+                        <img src="images/screenshot-2.png" alt="AI番茄闹钟专注计时器界面" width="1290" height="2796" loading="lazy" decoding="async">
+                        <figcaption>专注计时器</figcaption>
+                    </figure>
+                    <figure class="screenshot-item">
+                        <img src="images/screenshot-3.png" alt="AI番茄闹钟数据统计界面" width="1290" height="2796" loading="lazy" decoding="async">
+                        <figcaption>数据统计</figcaption>
+                    </figure>
+                    <figure class="screenshot-item">
+                        <img src="images/screenshot-4.png" alt="AI番茄闹钟AI建议界面" width="1290" height="2796" loading="lazy" decoding="async">
+                        <figcaption>AI建议</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
 
         <section id="download" class="download">
-            <div class="container">
-                <div class="download-content">
-                    <h2>开始你的高效之旅</h2>
-                    <p>免费下载AI番茄钟，让人工智能帮你找到最佳的工作节奏</p>
-                    <div class="download-buttons">
-                        <a href="https://weiproduct.github.io/ME/" class="btn btn-primary btn-large">
-                            <i class="fas fa-user"></i>
-                            个人网站
-                        </a>
-                        <a href="https://apps.apple.com/us/app/ai%E7%95%AA%E8%8C%84%E9%97%B9%E9%92%9F/id6748548518" class="btn btn-outline btn-large">
-                            <i class="fab fa-apple"></i>
-                            App Store下载
-                        </a>
-                    </div>
-                    <div class="download-info">
-                        <div class="info-item">
-                            <i class="fas fa-check"></i>
-                            <span>完全免费</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-check"></i>
-                            <span>开源项目</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-check"></i>
-                            <span>跨平台支持</span>
-                        </div>
-                    </div>
+            <div class="container download-panel">
+                <div>
+                    <p class="eyebrow">Available on App Store</p>
+                    <h2>开始建立更稳定的专注节奏</h2>
+                    <p>适合学生、专业人士、自由职业者，以及任何希望减少拖延、提升注意力质量的人。</p>
+                </div>
+                <div class="download-actions">
+                    <a href="https://apps.apple.com/cn/app/ai%E7%95%AA%E8%8C%84%E9%97%B9%E9%92%9F/id6748548518" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">前往 App Store</a>
+                    <a href="mailto:1597498880weiproduct@gmail.com?subject=AI%20Pomodoro%20Timer%20support" class="btn btn-outline btn-large">联系产品支持</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <i class="fas fa-brain"></i>
-                    <span>AI番茄钟</span>
-                </div>
-                <div class="footer-links">
-                    <a href="https://weiproduct.github.io/ME/">个人网站</a>
-                    <a href="#contact">联系我们</a>
-                    <a href="#privacy">隐私政策</a>
-                </div>
+        <div class="container footer-content">
+            <a class="footer-brand" href="https://weiproduct.com/" target="_blank" rel="noopener noreferrer">WeiProduct</a>
+            <div class="footer-links">
+                <a href="https://weiproduct.com/" target="_blank" rel="noopener noreferrer">公司网站</a>
+                <a href="mailto:1597498880weiproduct@gmail.com?subject=AI%20Pomodoro%20Timer%20support">联系支持</a>
+                <a href="https://github.com/WeiProduct/AITomatoClock" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 AI番茄钟. 保留所有权利.</p>
-            </div>
+            <p>&copy; <span id="currentYear">2026</span> WeiProduct. All rights reserved.</p>
         </div>
     </footer>
 
