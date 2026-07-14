@@ -409,6 +409,7 @@ section {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 18px;
+    align-items: start;
 }
 
 .screenshot-item {
@@ -417,9 +418,8 @@ section {
 
 .screenshot-item img {
     width: 100%;
-    aspect-ratio: 1290 / 2796;
-    object-fit: cover;
-    object-position: top;
+    height: auto;
+    display: block;
     border-radius: 26px;
     border: 8px solid #111827;
     box-shadow: 0 18px 40px rgba(28, 32, 43, 0.16);
