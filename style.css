@@ -128,16 +128,16 @@ html:not([lang="en"]) .badge-en { display: none; }
 
 /* Hero device widget */
 .hero-visual { position: relative; display: flex; justify-content: center; }
-.device { position: relative; width: 300px; max-width: 78vw; background: var(--card); border: 1px solid var(--border-color); border-radius: 40px; padding: 16px 14px 18px; box-shadow: var(--shadow-lg); }
+.device { position: relative; width: 300px; max-width: 78vw; aspect-ratio: 9 / 19.5; display: flex; flex-direction: column; overflow: hidden; background: var(--card); border: 1px solid var(--border-color); border-radius: 40px; padding: 16px 14px 18px; box-shadow: var(--shadow-lg); }
 .device-notch { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); width: 90px; height: 22px; background: var(--text-primary); opacity: .9; border-radius: 999px; z-index: 3; }
 :root[data-theme="dark"] .device-notch { background: #000; opacity: 1; }
 
-.focus { margin-top: 30px; padding: 0 4px; }
+.focus { margin-top: 30px; padding: 0 4px; flex: 1; min-height: 0; display: flex; flex-direction: column; }
 .focus-head { display: flex; align-items: center; justify-content: space-between; padding: 2px 6px 10px; }
 .focus-title { font-weight: 800; font-size: 17px; }
 .focus-ai { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: var(--mint); }
 .focus-ai .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 0 rgba(43,181,168,.5); animation: pulse 2s infinite; }
-.timer-wrap { display: flex; justify-content: center; padding: 4px 0 12px; }
+.timer-wrap { display: flex; justify-content: center; align-items: center; flex: 1 1 auto; min-height: 0; padding: 10px 0 16px; }
 .timer-ring { position: relative; width: 150px; height: 150px; }
 .timer-ring svg { width: 150px; height: 150px; transform: rotate(-90deg); }
 .ring-track { fill: none; stroke: var(--border-color); stroke-width: 12; }
