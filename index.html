@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI番茄闹钟 | AI Pomodoro Timer by WeiProduct</title>
-    <meta name="description" content="AI番茄闹钟把智能任务排序、时间分配、专注计时和进度追踪放进一个轻量 iPhone 与 iPad 应用，帮助学生、专业人士和自由职业者稳定进入深度工作。">
-    <meta name="robots" content="index,follow">
-    <meta name="theme-color" content="#f05252">
-    <link rel="canonical" href="https://weiproduct.github.io/AITomatoClock/">
-    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#f05252" id="themeColorMeta">
+    <meta name="robots" content="index, follow">
+    <title>AI番茄闹钟 - AI 智能番茄专注计时器 | AI Pomodoro Timer</title>
+    <meta name="description" content="AI番茄闹钟把智能任务排序、自适应时间分配、专注计时和进度追踪放进一个轻量的 iPhone 与 iPad 应用，帮助学生、专业人士和自由职业者稳定进入深度工作。">
     <meta property="og:title" content="AI番茄闹钟 | AI Pomodoro Timer">
-    <meta property="og:description" content="AI task sorting meets Pomodoro rhythm. Focus smarter with adaptive reminders, progress tracking, and a clean timer interface.">
+    <meta property="og:description" content="让 AI 帮你安排下一段专注时间——智能任务排序、自适应时间块与番茄工作法，专注节奏更容易坚持。">
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://weiproduct.github.io/AITomatoClock/">
     <meta property="og:image" content="https://weiproduct.github.io/AITomatoClock/images/screenshot-1.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AI番茄闹钟 | AI Pomodoro Timer">
-    <meta name="twitter:description" content="Smart focus sessions for people who want less planning overhead and more steady progress.">
+    <meta name="twitter:description" content="AI task sorting meets the Pomodoro rhythm. Focus smarter with adaptive time blocks, a clean timer, and progress tracking.">
+    <meta name="twitter:image" content="https://weiproduct.github.io/AITomatoClock/images/screenshot-1.png">
+    <link rel="canonical" href="https://weiproduct.github.io/AITomatoClock/">
+    <link rel="alternate" hreflang="zh-CN" href="https://weiproduct.github.io/AITomatoClock/">
+    <link rel="alternate" hreflang="en" href="https://weiproduct.github.io/AITomatoClock/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f05252'/%3E%3Cstop offset='1' stop-color='%23c9343d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Cpath d='M43 22c3-6 11-6 14 0' fill='none' stroke='%232bb5a8' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='57' r='25' fill='none' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M50 57V41M50 57l11 6' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f05252'/%3E%3Cstop offset='1' stop-color='%23c9343d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Cpath d='M43 22c3-6 11-6 14 0' fill='none' stroke='%232bb5a8' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='57' r='25' fill='none' stroke='%23fff' stroke-width='6'/%3E%3Cpath d='M50 57V41M50 57l11 6' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
     {
@@ -26,187 +34,304 @@
       "applicationCategory": "ProductivityApplication",
       "operatingSystem": "iOS, iPadOS",
       "url": "https://weiproduct.github.io/AITomatoClock/",
+      "image": "https://weiproduct.github.io/AITomatoClock/images/screenshot-1.png",
       "downloadUrl": "https://apps.apple.com/app/id6748548518",
-      "creator": {
-        "@type": "Organization",
-        "name": "WeiProduct",
-        "url": "https://weiproduct.com/"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "creator": { "@type": "Organization", "name": "WeiProduct", "url": "https://weiproduct.com/" },
+      "description": "AI番茄闹钟是一款把智能任务排序、自适应时间分配、番茄专注计时和进度追踪结合在一起的 iPhone 与 iPad 应用。"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "AI番茄闹钟是免费的吗？", "acceptedAnswer": { "@type": "Answer", "text": "是的，可以在 App Store 免费下载使用。" } },
+        { "@type": "Question", "name": "支持 iPad 吗？", "acceptedAnswer": { "@type": "Answer", "text": "支持，AI番茄闹钟是 iPhone 与 iPad 通用应用。" } },
+        { "@type": "Question", "name": "AI 是怎么帮我排任务的？", "acceptedAnswer": { "@type": "Answer", "text": "AI 会根据任务的紧急度和重要度给出优先级建议，你随时可以手动调整顺序。" } },
+        { "@type": "Question", "name": "可以自定义番茄时长吗？", "acceptedAnswer": { "@type": "Answer", "text": "可以，专注与休息时长会按任务智能调整，25 分钟只是起点而非固定模板。" } },
+        { "@type": "Question", "name": "支持哪些语言？", "acceptedAnswer": { "@type": "Answer", "text": "完整支持简体中文与英文双语界面。" } }
+      ]
     }
     </script>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav" aria-label="Primary navigation">
-            <a class="nav-brand" href="#top" aria-label="AI番茄闹钟 home">
-                <span class="brand-mark" aria-hidden="true">25</span>
-                <span>AI番茄闹钟</span>
+    <a class="skip-link" href="#main" data-i18n="skip">跳到主要内容</a>
+
+    <!-- Inline App Store badges (self-contained, CSP-safe) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="badge-en" viewBox="0 0 120 40">
+            <rect width="120" height="40" rx="8" fill="#000"/>
+            <g transform="translate(12 9) scale(0.8)" fill="#fff"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></g>
+            <text x="44" y="16" fill="#fff" font-family="-apple-system,'Segoe UI',Roboto,sans-serif" font-size="8.5">Download on the</text>
+            <text x="43" y="31" fill="#fff" font-family="-apple-system,'Segoe UI',Roboto,sans-serif" font-size="16" font-weight="600" letter-spacing="-0.3">App Store</text>
+        </symbol>
+        <symbol id="badge-zh" viewBox="0 0 120 40">
+            <rect width="120" height="40" rx="8" fill="#000"/>
+            <g transform="translate(12 9) scale(0.8)" fill="#fff"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></g>
+            <text x="44" y="16" fill="#fff" font-family="-apple-system,'PingFang SC','Segoe UI',sans-serif" font-size="8.5">在 App Store 上</text>
+            <text x="43" y="31" fill="#fff" font-family="-apple-system,'PingFang SC','Segoe UI',sans-serif" font-size="16" font-weight="600">下载</text>
+        </symbol>
+    </svg>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a class="nav-brand" href="#top" aria-label="AI番茄闹钟">
+                <span class="brand-icon" aria-hidden="true">
+                    <svg viewBox="0 0 100 100" width="34" height="34"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f05252"/><stop offset="1" stop-color="#c9343d"/></linearGradient></defs><rect width="100" height="100" rx="24" fill="url(#bg)"/><path d="M43 22c3-6 11-6 14 0" fill="none" stroke="#2bb5a8" stroke-width="6" stroke-linecap="round"/><circle cx="50" cy="57" r="25" fill="none" stroke="#fff" stroke-width="6"/><path d="M50 57V41M50 57l11 6" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg>
+                </span>
+                <span class="brand-name">AI番茄闹钟</span>
             </a>
-            <div class="nav-links">
-                <a href="#features">功能</a>
-                <a href="#screenshots">界面</a>
-                <a href="https://apps.apple.com/app/id6748548518" target="_blank" rel="noopener noreferrer">下载</a>
+            <div class="nav-menu">
+                <a href="#how" class="nav-link" data-i18n="navHow">使用流程</a>
+                <a href="#features" class="nav-link" data-i18n="navFeatures">功能特点</a>
+                <a href="#screenshots" class="nav-link" data-i18n="navScreenshots">应用截图</a>
+                <a href="#faq" class="nav-link" data-i18n="navFaq">常见问题</a>
+                <button class="icon-btn" type="button" id="themeToggle" aria-label="切换深色模式">
+                    <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+                    <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+                </button>
+                <button class="lang-switch" type="button" id="langSwitch" aria-label="Switch language">EN</button>
+                <a href="https://apps.apple.com/app/id6748548518" class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener noreferrer" data-i18n="navGet">获取 App</a>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main id="top">
-        <section class="hero" aria-labelledby="hero-title">
+    <main id="main">
+    <section class="hero" id="top">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container">
             <div class="hero-content">
-                <p class="eyebrow">AI Pomodoro Timer for iPhone and iPad</p>
-                <h1 id="hero-title" class="hero-title">让 AI 帮你安排下一段专注时间</h1>
-                <p class="hero-subtitle">AI番茄闹钟结合任务优先级、智能时间分配、个性化建议和番茄工作法，把计划负担降下来，让专注节奏更容易坚持。</p>
+                <span class="eyebrow" data-i18n="heroEyebrow">✦ AI 驱动的番茄专注</span>
+                <h1 class="hero-title" data-i18n="heroTitle">让 AI 帮你安排下一段专注时间</h1>
+                <p class="hero-subtitle" data-i18n="heroSubtitle">AI番茄闹钟结合任务优先级、智能时间分配和番茄工作法，把计划负担降下来，让专注节奏更容易坚持。</p>
                 <div class="hero-buttons">
-                    <a href="https://apps.apple.com/app/id6748548518" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        <span class="btn-icon" aria-hidden="true">A</span>
-                        App Store 下载
+                    <a class="appstore-badge" href="https://apps.apple.com/app/id6748548518" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+                        <svg class="badge-en" viewBox="0 0 120 40" role="img" aria-hidden="true"><use href="#badge-en"/></svg>
+                        <svg class="badge-zh" viewBox="0 0 120 40" role="img" aria-hidden="true"><use href="#badge-zh"/></svg>
                     </a>
-                    <a href="#screenshots" class="btn btn-secondary">查看产品界面</a>
+                    <a href="#screenshots" class="btn btn-secondary" data-i18n="heroSecondary">查看产品界面</a>
                 </div>
-                <dl class="hero-facts" aria-label="Product facts">
-                    <div>
-                        <dt>平台</dt>
-                        <dd>iPhone / iPad</dd>
+                <ul class="hero-trust">
+                    <li data-i18n="trust1">🍅 番茄工作法</li>
+                    <li data-i18n="trust2">🤖 AI 智能排序</li>
+                    <li data-i18n="trust3">🌏 中英双语</li>
+                </ul>
+            </div>
+            <div class="hero-visual">
+                <div class="device" role="img" aria-label="AI 已把今天的任务按优先级排好，并进入番茄专注计时">
+                    <div class="device-notch" aria-hidden="true"></div>
+                    <div class="focus">
+                        <div class="focus-head">
+                            <span class="focus-title" data-i18n="focusTitle">专注中</span>
+                            <span class="focus-ai"><span class="dot"></span><span data-i18n="focusAi">AI 已排序</span></span>
+                        </div>
+                        <div class="timer-wrap">
+                            <div class="timer-ring">
+                                <svg viewBox="0 0 150 150" aria-hidden="true">
+                                    <defs><linearGradient id="ringgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f05252"/><stop offset="1" stop-color="#c9343d"/></linearGradient></defs>
+                                    <circle class="ring-track" cx="75" cy="75" r="69"/>
+                                    <circle class="ring-prog" cx="75" cy="75" r="69"/>
+                                </svg>
+                                <div class="timer-center">
+                                    <span class="timer-time" id="timerTime">24:12</span>
+                                    <span class="timer-label" data-i18n="timerLabel">第 2 个番茄</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="queue">
+                            <div class="qtask now"><span class="qi" aria-hidden="true"></span><span data-i18n="q1now">写论文引言 · 25min</span><span class="qtag now" data-i18n="q1tag">现在</span></div>
+                            <div class="qtask q1"><span class="qi" aria-hidden="true"></span><span data-i18n="q2task">回复导师邮件 · 10min</span><span class="qtag high" data-i18n="q2tag">高</span></div>
+                            <div class="qtask q2"><span class="qi" aria-hidden="true"></span><span data-i18n="q3task">读 20 页 · 25min</span><span class="qtag mid" data-i18n="q3tag">中</span></div>
+                        </div>
+                        <div class="focus-foot" data-i18n="focusFoot">AI 已按优先级排好 3 项任务</div>
                     </div>
-                    <div>
-                        <dt>类别</dt>
-                        <dd>效率工具</dd>
-                    </div>
-                    <div>
-                        <dt>价格</dt>
-                        <dd>免费</dd>
-                    </div>
-                </dl>
-            </div>
-            <div class="hero-visual" aria-label="AI番茄闹钟 app preview">
-                <div class="phone-frame primary-screen">
-                    <img src="images/screenshot-1.png" alt="AI番茄闹钟任务列表界面" width="1290" height="2796" fetchpriority="high" decoding="async">
                 </div>
-                <div class="timer-orbit" aria-hidden="true">
-                    <span>25</span>
-                    <small>AI</small>
-                </div>
+                <div class="timer-orbit" aria-hidden="true"><span>25</span><small>AI</small></div>
+                <div class="hero-chip chip-a" data-i18n="chipA">🍅 今日 5 个番茄</div>
+                <div class="hero-chip chip-b" data-i18n="chipB">🔥 专注 2h 05m</div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="features" class="features">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Built around real focus behavior</p>
-                    <h2>从“要做什么”到“现在开始”</h2>
-                    <p>页面不再堆砌夸张数字，而是把产品本身的优势讲清楚：更低的任务整理成本、更稳定的专注节奏、更可见的进步反馈。</p>
-                </div>
-                <div class="features-grid">
-                    <article class="feature-card">
-                        <span class="feature-icon" aria-hidden="true">01</span>
-                        <h3>智能任务排序</h3>
-                        <p>根据紧急度和重要度帮助用户决定下一项任务，减少开始前的犹豫和反复切换。</p>
-                    </article>
-                    <article class="feature-card">
-                        <span class="feature-icon" aria-hidden="true">02</span>
-                        <h3>时间块分配</h3>
-                        <p>按任务难度和用户习惯安排更合适的专注时长，让 25 分钟节奏不再只是固定模板。</p>
-                    </article>
-                    <article class="feature-card">
-                        <span class="feature-icon" aria-hidden="true">03</span>
-                        <h3>自适应提醒</h3>
-                        <p>动态调整休息和工作提醒，帮助用户避开疲劳堆积，同时维持持续推进的节奏。</p>
-                    </article>
-                    <article class="feature-card">
-                        <span class="feature-icon" aria-hidden="true">04</span>
-                        <h3>进度与成就</h3>
-                        <p>通过历史记录、趋势和连续专注反馈，让用户看到真实积累，而不是只完成一次倒计时。</p>
-                    </article>
-                </div>
+    <section class="proof" aria-label="trust">
+        <div class="container proof-row">
+            <div class="proof-rating">
+                <div class="stars" aria-hidden="true">★★★★★</div>
+                <div class="proof-sub"><strong>App Store</strong><span data-i18n="proofRating">效率工具 · 番茄工作法</span></div>
             </div>
-        </section>
+            <div class="proof-stats">
+                <div class="stat"><strong>iPhone / iPad</strong><span data-i18n="stat1">通用应用</span></div>
+                <div class="stat"><strong>EN / 中文</strong><span data-i18n="stat2">双语界面</span></div>
+                <div class="stat"><strong>AI</strong><span data-i18n="stat3">智能排序</span></div>
+                <div class="stat"><strong>Free</strong><span data-i18n="stat4">免费下载</span></div>
+            </div>
+        </div>
+    </section>
 
-        <section class="workflow" aria-labelledby="workflow-title">
-            <div class="container workflow-grid">
-                <div>
-                    <p class="eyebrow">Product logic</p>
-                    <h2 id="workflow-title">一个轻量但完整的专注闭环</h2>
+    <section id="how" class="how">
+        <div class="container">
+            <h2 class="section-title" data-i18n="howTitle">三步进入专注状态</h2>
+            <p class="section-sub" data-i18n="howSub">写下要做的事，剩下的交给 AI。</p>
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step-badge">1</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10M4 12h10M4 17h6"/><path d="M18 13.5l1.3 2.6 2.7.4-2 1.9.5 2.6-2.5-1.3-2.5 1.3.5-2.6-2-1.9 2.7-.4z"/></svg></div>
+                    <h3 data-i18n="step1Title">添加任务，AI 排序</h3>
+                    <p data-i18n="step1Desc">录入待办，AI 按紧急度和重要度给出优先级建议，不用再纠结先做哪一件。</p>
                 </div>
-                <ol class="steps">
-                    <li>
-                        <span>Plan</span>
-                        <p>把待办拆成可执行任务，并让 AI 辅助排序。</p>
-                    </li>
-                    <li>
-                        <span>Focus</span>
-                        <p>进入计时器，保持简洁界面，降低干扰。</p>
-                    </li>
-                    <li>
-                        <span>Recover</span>
-                        <p>按节奏休息，避免长时间高压造成的效率下降。</p>
-                    </li>
-                    <li>
-                        <span>Improve</span>
-                        <p>用历史数据和趋势回看自己的工作模式。</p>
-                    </li>
-                </ol>
+                <div class="step reveal">
+                    <div class="step-badge">2</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg></div>
+                    <h3 data-i18n="step2Title">开始一段番茄专注</h3>
+                    <p data-i18n="step2Desc">进入极简计时界面，按任务安排合适的专注时长与休息节奏，减少干扰。</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-badge">3</div>
+                    <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16"/><path d="M7 15l3-3 3 2 4-5"/></svg></div>
+                    <h3 data-i18n="step3Title">回看进度与趋势</h3>
+                    <p data-i18n="step3Desc">用历史记录和趋势看清自己的专注模式，让每一天都比昨天更有掌控感。</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="screenshots" class="screenshots">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Current app surface</p>
-                    <h2>产品界面预览</h2>
-                    <p>清晰的任务、计时、数据和建议界面，让用户能快速理解这个 App 解决的具体问题。</p>
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-i18n="featuresTitle">核心功能</h2>
+            <p class="section-sub" data-i18n="featuresSub">为专注和持续推进而设计的每一个细节。</p>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h9M4 12h9M4 18h5"/><path d="M17 4.5v13M17 4.5l-3 3M17 4.5l3 3"/></svg></div>
+                    <h3 data-i18n="feature1Title">智能任务排序</h3>
+                    <p data-i18n="feature1Desc">根据紧急度和重要度帮你决定下一项任务，减少开始前的犹豫和反复切换。</p>
                 </div>
-                <div class="screenshots-grid">
-                    <figure class="screenshot-item">
-                        <img src="images/screenshot-1.png" alt="AI番茄闹钟任务管理界面" width="1290" height="2796" loading="lazy" decoding="async">
-                        <figcaption>智能任务管理</figcaption>
-                    </figure>
-                    <figure class="screenshot-item">
-                        <img src="images/screenshot-2.png" alt="AI番茄闹钟专注计时器界面" width="1290" height="2796" loading="lazy" decoding="async">
-                        <figcaption>专注计时器</figcaption>
-                    </figure>
-                    <figure class="screenshot-item">
-                        <img src="images/screenshot-3.png" alt="AI番茄闹钟数据统计界面" width="1290" height="2796" loading="lazy" decoding="async">
-                        <figcaption>数据统计</figcaption>
-                    </figure>
-                    <figure class="screenshot-item">
-                        <img src="images/screenshot-4.png" alt="AI番茄闹钟AI建议界面" width="1290" height="2796" loading="lazy" decoding="async">
-                        <figcaption>AI建议</figcaption>
-                    </figure>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="8" height="6.5" rx="1.6"/><rect x="13" y="4" width="8" height="6.5" rx="1.6"/><rect x="3" y="13.5" width="12" height="6.5" rx="1.6"/></svg></div>
+                    <h3 data-i18n="feature2Title">时间块分配</h3>
+                    <p data-i18n="feature2Desc">按任务难度和你的习惯安排合适的专注时长，让 25 分钟不再只是固定模板。</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg></div>
+                    <h3 data-i18n="feature3Title">番茄专注计时</h3>
+                    <p data-i18n="feature3Desc">极简的计时界面，专注、休息节奏清晰，帮助你稳定进入深度工作。</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9a6 6 0 0 1 12 0c0 4.5 2 5.5 2 5.5H4S6 13.5 6 9z"/><path d="M10 19a2 2 0 0 0 4 0"/></svg></div>
+                    <h3 data-i18n="feature4Title">自适应提醒</h3>
+                    <p data-i18n="feature4Desc">动态调整休息与工作提醒，避开疲劳堆积，同时维持持续推进的节奏。</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4M4 20h16"/><rect x="7" y="12" width="3" height="5"/><rect x="12" y="8" width="3" height="9"/><rect x="17" y="5" width="3" height="12"/></svg></div>
+                    <h3 data-i18n="feature5Title">进度与成就</h3>
+                    <p data-i18n="feature5Desc">通过历史记录、趋势和连续专注反馈，让你看到真实的积累，而不只是完成一次倒计时。</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9S9.5 5.5 12 3z"/></svg></div>
+                    <h3 data-i18n="feature6Title">中英双语</h3>
+                    <p data-i18n="feature6Desc">完整支持简体中文与英文界面，满足不同用户的使用习惯。</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="download" class="download">
-            <div class="container download-panel">
-                <div>
-                    <p class="eyebrow">Available on App Store</p>
-                    <h2>开始建立更稳定的专注节奏</h2>
-                    <p>适合学生、专业人士、自由职业者，以及任何希望减少拖延、提升注意力质量的人。</p>
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2 class="section-title" data-i18n="screenshotsTitle">产品界面预览</h2>
+            <p class="section-sub" data-i18n="screenshotsSub">左右滑动，点击可放大查看。</p>
+            <div class="gallery">
+                <button class="gal-arrow prev" type="button" aria-label="上一张" id="galPrev">‹</button>
+                <div class="gal-track" id="galTrack">
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-1.png" alt="AI番茄闹钟智能任务管理界面" width="640" height="1387" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot1">智能任务管理</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-2.png" alt="AI番茄闹钟专注计时器界面" width="640" height="1387" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot2">专注计时器</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-3.png" alt="AI番茄闹钟数据统计界面" width="640" height="1387" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot3">数据统计</figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <div class="phone"><img src="images/screenshot-4.png" alt="AI番茄闹钟 AI 建议界面" width="640" height="1387" loading="lazy" decoding="async"></div>
+                        <figcaption data-i18n="shot4">AI 建议</figcaption>
+                    </figure>
                 </div>
-                <div class="download-actions">
-                    <a href="https://apps.apple.com/app/id6748548518" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">前往 App Store</a>
-                    <a href="mailto:1597498880weiproduct@gmail.com?subject=AI%20Pomodoro%20Timer%20support" class="btn btn-outline btn-large">联系产品支持</a>
-                </div>
+                <button class="gal-arrow next" type="button" aria-label="下一张" id="galNext">›</button>
             </div>
-        </section>
+            <div class="gal-dots" id="galDots" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <section class="privacy">
+        <div class="container privacy-card">
+            <div class="privacy-lead">
+                <h2 data-i18n="privacyTitle">为专注而设计，不为打扰而设计</h2>
+                <p data-i18n="privacyDesc">干净简洁的界面，没有广告，没有花哨弹窗——只把注意力还给你正在做的那件事。</p>
+            </div>
+            <ul class="privacy-points">
+                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pp1">无广告干扰</span></li>
+                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pp2">免费下载使用</span></li>
+                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pp3">极简专注界面</span></li>
+                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pp4">iPhone 与 iPad 通用</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title" data-i18n="faqTitle">常见问题</h2>
+            <div class="faq-list">
+                <details class="faq-item reveal"><summary data-i18n="q1">AI番茄闹钟是免费的吗？</summary><p data-i18n="a1">是的，可以在 App Store 免费下载使用。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q2">支持 iPad 吗？</summary><p data-i18n="a2">支持，AI番茄闹钟是 iPhone 与 iPad 通用应用。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q3">AI 是怎么帮我排任务的？</summary><p data-i18n="a3">AI 会根据任务的紧急度和重要度给出优先级建议，你随时可以手动调整顺序。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q4">可以自定义番茄时长吗？</summary><p data-i18n="a4">可以，专注与休息时长会按任务智能调整，25 分钟只是起点而非固定模板。</p></details>
+                <details class="faq-item reveal"><summary data-i18n="q5">支持哪些语言？</summary><p data-i18n="a5">完整支持简体中文与英文双语界面。</p></details>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2 data-i18n="downloadTitle">开始建立更稳定的专注节奏</h2>
+                <p data-i18n="downloadSubtitle">适合学生、专业人士、自由职业者，以及任何想减少拖延、提升注意力质量的人。</p>
+                <div class="download-buttons">
+                    <a class="appstore-badge" href="https://apps.apple.com/app/id6748548518" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+                        <svg class="badge-en" viewBox="0 0 120 40" role="img" aria-hidden="true"><use href="#badge-en"/></svg>
+                        <svg class="badge-zh" viewBox="0 0 120 40" role="img" aria-hidden="true"><use href="#badge-zh"/></svg>
+                    </a>
+                </div>
+                <p class="download-note" data-i18n="downloadNote">适用于 iPhone 与 iPad · 免费下载</p>
+            </div>
+        </div>
+    </section>
     </main>
 
     <footer class="footer">
-        <div class="container footer-content">
-            <a class="footer-brand" href="https://weiproduct.com/" target="_blank" rel="noopener noreferrer">WeiProduct</a>
-            <div class="footer-links">
-                <a href="https://weiproduct.com/" target="_blank" rel="noopener noreferrer">公司网站</a>
-                <a href="mailto:1597498880weiproduct@gmail.com?subject=AI%20Pomodoro%20Timer%20support">联系支持</a>
-                <a href="https://github.com/WeiProduct/AITomatoClock" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <span id="currentYear">2026</span> <span data-i18n="footerRights">AI番茄闹钟. 保留所有权利。</span></p>
+                <div class="footer-links">
+                    <a href="https://weiproduct.com/" target="_blank" rel="noopener noreferrer" data-i18n="footerCompany">公司网站</a>
+                    <a href="mailto:1597498880weiproduct@gmail.com?subject=AI%20Pomodoro%20Timer%20support" data-i18n="footerSupport">联系支持</a>
+                    <a href="https://github.com/WeiProduct/AITomatoClock" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+                <p>Contact: <a href="mailto:1597498880weiproduct@gmail.com">1597498880weiproduct@gmail.com</a></p>
+                <p>Built by WeiProduct</p>
             </div>
-            <p>&copy; <span id="currentYear">2026</span> WeiProduct. All rights reserved.</p>
         </div>
     </footer>
+
+    <div class="sticky-cta" id="stickyCta">
+        <div class="sticky-app">
+            <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 100 100" width="30" height="30"><rect width="100" height="100" rx="24" fill="url(#bg)"/><path d="M43 22c3-6 11-6 14 0" fill="none" stroke="#2bb5a8" stroke-width="6" stroke-linecap="round"/><circle cx="50" cy="57" r="25" fill="none" stroke="#fff" stroke-width="6"/><path d="M50 57V41M50 57l11 6" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/></svg></span>
+            <div class="sticky-txt"><strong>AI番茄闹钟</strong><span data-i18n="stickySub">AI 智能番茄专注 · 免费</span></div>
+        </div>
+        <a href="https://apps.apple.com/app/id6748548518" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="stickyGet">获取</a>
+    </div>
 
     <script src="script.js"></script>
 </body>
