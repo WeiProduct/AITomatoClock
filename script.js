@@ -17,7 +17,33 @@ const I18N = {
     chipA: '🍅 今日 5 个番茄', chipB: '🔥 专注 2h 05m',
     proofRating: '效率工具 · 番茄工作法',
     stat1: '通用应用', stat2: '双语界面', stat3: '智能排序', stat4: '免费下载',
+    howEyebrow: '使用流程', featuresEyebrow: '核心功能', screenshotsEyebrow: '界面预览', faqEyebrow: '答疑',
     howTitle: '三步进入专注状态', howSub: '写下要做的事，剩下的交给 AI。',
+    demoEyebrow: '亲手体验', demoTitle: '亲手试试 AI 排序', demoSub: '点一下，看 AI 怎么决定先做哪件事。',
+    demoTask1: '回消息', demoTag1: '紧急',
+    demoTask2: '健身', demoTag2: '稍后',
+    demoTask3: '复习第3章', demoTag3: '重要',
+    demoTask4: '改简历', demoTag4: '重要',
+    demoTask5: '写周报', demoTag5: '现在',
+    demoSort: 'AI 排序', demoReset: '重来', demoDone: 'AI 已排好 5 项任务 · 预计 2h 15m',
+    methodEyebrow: '方法论', methodTitle: '为什么 AI + 番茄节奏有效', methodSub: '不是更努力，而是把一天切成大脑喜欢的节奏。',
+    method1Title: '专注块隔离干扰', method1Desc: '一次只面对一件事，把切换成本和分心的机会都压到最低。',
+    method2Title: '休息防止疲劳堆积', method2Desc: '短休息穿插在专注之间，让注意力在一天里保持可持续。',
+    method3Title: 'AI 按任务调整块长', method3Desc: '25 分钟只是起点——难的任务给更长的块，小事用 10 分钟快速清掉。',
+    rhythmTitle: '一天的节奏 · 示例', rhythmFocus: '专注', rhythmBreak: '休息',
+    personasEyebrow: '使用场景', personasTitle: '为你的一天而设计', personasSub: '不同的日程，同一套专注节奏。',
+    persona1Name: '学生', persona1Desc: '论文、复习、Deadline——AI 把大任务切成能开始的番茄。', persona1Chip: '论文引言 · 25min',
+    persona2Name: '上班族', persona2Desc: '会议之间的碎片时间，也能排出一段完整的 25 分钟。', persona2Chip: '会前清邮件 · 10min',
+    persona3Name: '自由职业者', persona3Desc: '多项目来回切换？让 AI 决定现在推进哪一个。', persona3Chip: '客户 A 改稿 · 45min',
+    persona4Name: '备考者', persona4Desc: '连续专注与趋势记录，让积累看得见。', persona4Chip: '错题复盘 · 25min',
+    compareEyebrow: '价值对比', compareTitle: '有 AI 和没有 AI 的区别', compareSub: '普通计时器只会倒数，AI番茄闹钟帮你决定和坚持。',
+    cmpAspect: '对比', cmpApp: 'AI番茄闹钟', cmpPlain: '普通计时器',
+    cmpR1: '下一件做什么', cmpR1a: 'AI 按紧急 / 重要排序', cmpR1b: '自己纠结',
+    cmpR2: '专注时长', cmpR2a: '按任务自适应', cmpR2b: '固定 25 分钟',
+    cmpR3: '休息提醒', cmpR3a: '动态防疲劳', cmpR3b: '得自己记得',
+    cmpR4: '进度记录', cmpR4a: '历史 · 趋势 · 连续专注', cmpR4b: '无',
+    cmpR5: '语言', cmpR5a: '中英双语', cmpR5b: '—',
+    footerTagline: '让 AI 帮你安排下一段专注时间。', footerProduct: '产品', footerSupportCol: '支持', footerAppStore: 'App Store 下载',
     step1Title: '添加任务，AI 排序', step1Desc: '录入待办，AI 按紧急度和重要度给出优先级建议，不用再纠结先做哪一件。',
     step2Title: '开始一段番茄专注', step2Desc: '进入极简计时界面，按任务安排合适的专注时长与休息节奏，减少干扰。',
     step3Title: '回看进度与趋势', step3Desc: '用历史记录和趋势看清自己的专注模式，让每一天都比昨天更有掌控感。',
@@ -59,7 +85,33 @@ const I18N = {
     chipA: '🍅 5 pomodoros today', chipB: '🔥 Focus 2h 05m',
     proofRating: 'Productivity · Pomodoro',
     stat1: 'Universal app', stat2: 'Bilingual UI', stat3: 'AI sorting', stat4: 'Free download',
+    howEyebrow: 'HOW IT WORKS', featuresEyebrow: 'FEATURES', screenshotsEyebrow: 'PREVIEW', faqEyebrow: 'FAQ',
     howTitle: 'Reach focus in three steps', howSub: 'Write down what to do — AI handles the rest.',
+    demoEyebrow: 'TRY IT', demoTitle: 'Try AI sorting yourself', demoSub: 'One tap — watch AI decide what comes first.',
+    demoTask1: 'Reply to messages', demoTag1: 'URGENT',
+    demoTask2: 'Workout', demoTag2: 'LATER',
+    demoTask3: 'Review chapter 3', demoTag3: 'KEY',
+    demoTask4: 'Polish resume', demoTag4: 'KEY',
+    demoTask5: 'Weekly report', demoTag5: 'NOW',
+    demoSort: 'Sort with AI', demoReset: 'Reset', demoDone: 'AI planned 5 tasks · ~2h 15m',
+    methodEyebrow: 'THE METHOD', methodTitle: 'Why the AI-Pomodoro rhythm works', methodSub: 'Not about trying harder — it slices your day into a rhythm your brain likes.',
+    method1Title: 'Focus blocks isolate distraction', method1Desc: 'One task at a time keeps switching costs and distraction windows to a minimum.',
+    method2Title: 'Breaks stop fatigue from stacking', method2Desc: 'Short breaks between sessions keep your attention sustainable across the whole day.',
+    method3Title: 'AI sizes blocks per task', method3Desc: '25 minutes is just the starting point — harder tasks get longer blocks, small ones clear in a quick 10.',
+    rhythmTitle: 'A day\'s rhythm · example', rhythmFocus: 'Focus', rhythmBreak: 'Break',
+    personasEyebrow: 'FOR YOUR DAY', personasTitle: 'Built for your kind of day', personasSub: 'Different schedules, the same focus rhythm.',
+    persona1Name: 'Student', persona1Desc: 'Papers, revision, deadlines — AI slices big tasks into pomodoros you can actually start.', persona1Chip: 'Thesis intro · 25m',
+    persona2Name: 'Professional', persona2Desc: 'Squeeze a real 25 minutes of deep work between meetings.', persona2Chip: 'Inbox sweep · 10m',
+    persona3Name: 'Freelancer', persona3Desc: 'Juggling projects? Let AI pick what moves forward now.', persona3Chip: 'Client A edits · 45m',
+    persona4Name: 'Exam prepper', persona4Desc: 'Streaks and trends make the grind visible.', persona4Chip: 'Review mistakes · 25m',
+    compareEyebrow: 'WHY AI', compareTitle: 'With AI vs a plain timer', compareSub: 'A plain timer only counts down — AI Pomodoro decides and keeps you going.',
+    cmpAspect: 'Compare', cmpApp: 'AI Pomodoro Timer', cmpPlain: 'A plain timer',
+    cmpR1: 'What to do next', cmpR1a: 'AI ranks by urgency & importance', cmpR1b: 'You agonize over it',
+    cmpR2: 'Session length', cmpR2a: 'Adapts to each task', cmpR2b: 'Fixed 25 minutes',
+    cmpR3: 'Break reminders', cmpR3a: 'Dynamic, fatigue-aware', cmpR3b: 'You have to remember',
+    cmpR4: 'Progress', cmpR4a: 'History, trends & streaks', cmpR4b: 'None',
+    cmpR5: 'Language', cmpR5a: 'English + 中文', cmpR5b: '—',
+    footerTagline: 'Let AI plan your next focus session.', footerProduct: 'Product', footerSupportCol: 'Support', footerAppStore: 'Get it on the App Store',
     step1Title: 'Add tasks, AI sorts them', step1Desc: 'Drop in your to-dos and AI suggests priority by urgency and importance — no more agonizing over what to start.',
     step2Title: 'Start a focus session', step2Desc: 'Enter a distraction-free timer with focus and break lengths tuned to each task, so you settle into deep work.',
     step3Title: 'Review progress & trends', step3Desc: 'See your focus patterns through history and trends, and feel a little more in control each day.',
@@ -81,7 +133,7 @@ const I18N = {
     q4: 'Can I customize the Pomodoro length?', a4: 'Yes. Focus and break lengths adapt to each task — 25 minutes is a starting point, not a fixed template.',
     q5: 'Which languages are supported?', a5: 'Full Simplified Chinese and English interfaces are supported.',
     downloadTitle: 'Build a steadier focus rhythm', downloadSubtitle: 'For students, professionals, freelancers — anyone who wants less procrastination and better-quality attention.', downloadNote: 'For iPhone & iPad · Free download',
-    footerRights: 'AI Pomodoro Timer. All rights reserved.', footerCompany: 'Company', footerSupport: 'Support',
+    footerRights: 'AI Pomodoro Timer. All rights reserved.', footerCompany: 'Company', footerSupport: 'Contact support',
     stickySub: 'AI Pomodoro focus · Free', stickyGet: 'Get'
   }
 };
@@ -98,6 +150,8 @@ function applyLang(lang) {
   document.documentElement.lang = currentLang;
   const ls = document.getElementById('langSwitch');
   if (ls) ls.textContent = currentLang === 'zh-CN' ? 'EN' : '中文';
+  const fls = document.getElementById('footerLang');
+  if (fls) fls.textContent = currentLang === 'zh-CN' ? 'EN' : '中文';
   try { localStorage.setItem('lang', currentLang); } catch (e) {}
 }
 
@@ -134,6 +188,42 @@ function initTimer() {
     const s = total % 60;
     el.textContent = m + ':' + String(s).padStart(2, '0');
   }, 1000);
+}
+
+// ===== AI sorting demo (FLIP reorder) =====
+function initDemo() {
+  const card = document.getElementById('demoCard');
+  const list = document.getElementById('demoList');
+  const sortBtn = document.getElementById('demoSort');
+  const resetBtn = document.getElementById('demoReset');
+  if (!card || !list || !sortBtn || !resetBtn) return;
+  const initialOrder = Array.from(list.children);
+
+  function reorder(sorted) {
+    const rows = Array.from(list.children);
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const firstTop = new Map(rows.map(r => [r, r.getBoundingClientRect().top]));
+    const target = sorted
+      ? rows.slice().sort((a, b) => Number(a.dataset.order) - Number(b.dataset.order))
+      : initialOrder;
+    target.forEach(r => list.appendChild(r));
+    card.classList.toggle('sorted', sorted);
+    if (reduced) return;
+    target.forEach(r => {
+      const dy = firstTop.get(r) - r.getBoundingClientRect().top;
+      if (!dy) return;
+      r.style.transition = 'none';
+      r.style.transform = 'translateY(' + dy + 'px)';
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          r.style.transition = 'transform .55s cubic-bezier(.2,.8,.25,1)';
+          r.style.transform = '';
+        });
+      });
+    });
+  }
+  sortBtn.addEventListener('click', () => reorder(true));
+  resetBtn.addEventListener('click', () => reorder(false));
 }
 
 // ===== Gallery =====
@@ -208,10 +298,15 @@ function initReveal() {
 function initScroll() {
   const nav = document.getElementById('navbar');
   const sticky = document.getElementById('stickyCta');
+  const bar = document.getElementById('progressBar');
   const onScroll = () => {
     const y = window.scrollY;
     if (nav) nav.classList.toggle('scrolled', y > 20);
     if (sticky) sticky.classList.toggle('show', y > 620);
+    if (bar) {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(y / max, 1) : 0) + ')';
+    }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -222,6 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initLang();
   initTimer();
+  initDemo();
   initGallery();
   initReveal();
   initScroll();
@@ -233,6 +329,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (ls) ls.addEventListener('click', () => applyLang(currentLang === 'zh-CN' ? 'en' : 'zh-CN'));
   const tt = document.getElementById('themeToggle');
   if (tt) tt.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+  const fl = document.getElementById('footerLang');
+  if (fl) fl.addEventListener('click', () => applyLang(currentLang === 'zh-CN' ? 'en' : 'zh-CN'));
+  const ft = document.getElementById('footerTheme');
+  if (ft) ft.addEventListener('click', () => setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
 
   document.querySelectorAll('a[target="_blank"]').forEach((link) => {
     const rel = new Set((link.getAttribute('rel') || '').split(/\s+/).filter(Boolean));
